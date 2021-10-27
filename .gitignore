@@ -1,0 +1,4 @@
+chalicelib
+.chalice/
+.python-version
+__pycache__/
