@@ -50,8 +50,8 @@ def bundle_and_send(players, trend):
     r = requests.post(
         url = WEBHOOK_URL,
         data = {'content': discord_payload, 'wait':'true'}
-    )    
-    print(r.json())
+    )
+    
     try:
         r.raise_for_status()    
     except requests.exceptions.HTTPError as e:
